@@ -4,7 +4,7 @@ import { ref } from 'vue';
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 const logInPayload = ref({
-  username: 'monkey',
+  username: '',
   password: '',
 });
 
@@ -27,6 +27,7 @@ async function handleSubmit(data: any) {
       type="text"
       validation="required|length:6,10"
       validation-visibility="blur"
+      placeholder="monkey"
       label="Username"
       name="username"
     ></FormKit>
@@ -34,6 +35,7 @@ async function handleSubmit(data: any) {
       type="password"
       validation="required|length:6"
       validation-visibility="blur"
+      placeholder="password"
       label="Password"
       name="password"
     ></FormKit>
