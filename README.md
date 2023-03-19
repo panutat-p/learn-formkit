@@ -1,4 +1,5 @@
 ## Dependencies
+
 https://formkit.com/getting-started/installation#with-astro
 
 https://formkit.com/getting-started/installation#with-astro#adding-genesis-theme
@@ -13,9 +14,11 @@ npm i bootstrap
 ```
 
 ## Guides
+
 https://formkit.com/essentials/inputs#sections
 
 FormKit form
-* No need to add submit button
-* No need to prevent submit default behavior, just `v-on:submit`
-* No need to do two-way binding using `v-model`
+
+- No need to add submit button
+- No need to prevent submit default behavior, just `v-on:submit`
+- No need to do two-way binding using `v-model`
