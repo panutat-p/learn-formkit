@@ -10,7 +10,9 @@
     "lint": "prettier --write ."
   },
   "dependencies": {
+    "@formkit/themes": "^0.16.2",
     "@formkit/vue": "^0.16.2",
+    "bootstrap": "^5.2.3",
     "vue": "^3.2.47"
   },
   "devDependencies": {
