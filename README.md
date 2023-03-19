@@ -17,6 +17,10 @@ npm i bootstrap
 
 https://formkit.com/essentials/inputs#sections
 
+https://formkit.com/essentials/validation#showing-errors
+
+https://formkit.com/essentials/validation#showing-errors#available-rules
+
 FormKit form
 
 - No need to add submit button

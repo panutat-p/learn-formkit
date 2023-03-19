@@ -5,7 +5,7 @@ const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 const logInPayload = ref({
   username: 'monkey',
-  password: 'banana',
+  password: '',
 });
 
 async function handleSubmit(data: any) {
@@ -23,7 +23,19 @@ async function handleSubmit(data: any) {
     v-on:submit="handleSubmit"
   >
     <h1>Log In</h1>
-    <FormKit type="text" label="Username" name="username"></FormKit>
-    <FormKit type="password" label="Password" name="password"></FormKit>
+    <FormKit
+      type="text"
+      validation="required|length:6,10"
+      validation-visibility="blur"
+      label="Username"
+      name="username"
+    ></FormKit>
+    <FormKit
+      type="password"
+      validation="required|length:6"
+      validation-visibility="blur"
+      label="Password"
+      name="password"
+    ></FormKit>
   </FormKit>
 </template>
